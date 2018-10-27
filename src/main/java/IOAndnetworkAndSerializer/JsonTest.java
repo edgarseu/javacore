@@ -1,4 +1,6 @@
 package IOAndnetworkAndSerializer;
+
+import com.alibaba.fastjson.JSON;
 import entity.Person;
 
 import java.sql.Timestamp;
@@ -21,7 +23,7 @@ public class JsonTest {
         people.add(person1);
 
         personMap.put("test", people);
-//        String result = JSON.toJSONString(personMap);
-//        System.out.print(result);
+        String result = JSON.toJSONString(personMap);
+        System.out.print(result);
     }
 }

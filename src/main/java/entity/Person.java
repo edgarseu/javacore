@@ -17,6 +17,11 @@ public class Person {
         this.birthday = birthday;
     }
 
+    public Person(int i, String s) {
+        this.age = i;
+        this.name = s;
+    }
+
     public String getName() {
         return name;
     }

@@ -1,5 +1,7 @@
 package time;
 
+import org.joda.time.LocalDate;
+
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.time.*;
@@ -14,6 +16,9 @@ import java.util.GregorianCalendar;
  */
 public class TimeTest {
     public static void main(String[] args) {
+
+        Calendar calendarAdd = Calendar.getInstance();
+        calendarAdd.add(Calendar.DAY_OF_WEEK, 21);
 
         final Date date = new Date();
         Timestamp timestamp = new Timestamp(date.getTime());
@@ -84,7 +89,7 @@ public class TimeTest {
         Calendar zonedDateTimeInstantCalendar = GregorianCalendar.from(zonedDateTime);
 
         LocalDate now = LocalDate.now();
-//        int day = now.getDayOfWeek();
+        int day = now.getDayOfWeek();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HHmm");
 

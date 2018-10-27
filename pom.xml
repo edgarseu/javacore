@@ -40,6 +40,11 @@
       <artifactId>commons-lang</artifactId>
       <version>2.6</version>
     </dependency>
+      <dependency>
+      <groupId>com.ctrip.flight.xapi.fltproductbasedataservice</groupId>
+      <artifactId>fltproductbasedataservice-client</artifactId>
+      <version>1.1.3</version>
+      </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -49,6 +54,11 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>22.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjdk.jol</groupId>
+      <artifactId>jol-core</artifactId>
+      <version>0.7.1</version>
     </dependency>
   </dependencies>
 </project>
