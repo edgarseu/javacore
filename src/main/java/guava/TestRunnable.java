@@ -8,7 +8,7 @@ import entity.Person;
 public class TestRunnable {
     public static void main(String[] args){
         System.out.println(Thread.currentThread().getId());
-        Person person = new Person(0, "000");
+        Person person = new Person("000",0 , null);
         prinObjecttMessage(person, 1);
 
         try {

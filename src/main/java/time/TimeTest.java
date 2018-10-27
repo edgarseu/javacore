@@ -1,7 +1,5 @@
 package time;
 
-import org.joda.time.LocalDate;
-
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.time.*;
@@ -86,7 +84,7 @@ public class TimeTest {
         Calendar zonedDateTimeInstantCalendar = GregorianCalendar.from(zonedDateTime);
 
         LocalDate now = LocalDate.now();
-        int day = now.getDayOfWeek();
+//        int day = now.getDayOfWeek();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HHmm");
 

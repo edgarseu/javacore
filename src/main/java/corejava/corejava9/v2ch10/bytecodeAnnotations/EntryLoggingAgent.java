@@ -1,10 +1,12 @@
 package corejava.corejava9.v2ch10.bytecodeAnnotations;
 
-import java.lang.instrument.*;
-import java.io.*;
-import java.security.*;
 import org.apache.bcel.classfile.*;
 import org.apache.bcel.generic.*;
+
+import java.io.ByteArrayInputStream;
+import java.lang.instrument.ClassFileTransformer;
+import java.lang.instrument.Instrumentation;
+import java.security.ProtectionDomain;
 
 /**
  * @version 1.00 2004-08-17
