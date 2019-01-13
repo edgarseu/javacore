@@ -38,11 +38,4 @@ public class Person {
         this.age = age;
     }
 
-    public Timestamp getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(Timestamp birthday) {
-        this.birthday = birthday;
-    }
 }

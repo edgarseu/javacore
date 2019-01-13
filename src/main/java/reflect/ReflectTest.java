@@ -1,37 +1,17 @@
-package IOAndnetworkAndSerializer;
+package reflect;
 
 import com.ctrip.flight.xapi.common.SerializationUtil;
 import com.google.gson.Gson;
 import entity.Person;
-import reflect.PeopleMgr;
 
 import java.lang.reflect.Field;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author caozy
- * @create 2018/7/6
+ * @create 2018/9/20
  */
-public class JsonTest {
+public class ReflectTest {
     public static void main(String[] args) {
-        Map<String, List<Person>> personMap = new HashMap<>();
-        Person person = new Person("01", 12, new Timestamp(System.nanoTime()));
-        Person person1 = new Person("02", 13, new Timestamp(System.nanoTime()));
-        List<Person> people = new ArrayList<>();
-        people.add(person);
-        people.add(person1);
-
-        personMap.put("test", people);
-        personMap.put("test2", people);
-
-        String xapiResult = SerializationUtil.toJson(personMap);
-        System.out.println(xapiResult);
-
-
         PeopleMgr peopleMgr = new PeopleMgr();
 
         peopleMgr.add(new Person(1, "1"));
@@ -53,5 +33,6 @@ public class JsonTest {
             String result = field.toString();
             System.out.println(result);
         }
+
     }
 }
