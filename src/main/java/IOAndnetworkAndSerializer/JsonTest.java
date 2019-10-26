@@ -1,6 +1,5 @@
 package IOAndnetworkAndSerializer;
 
-import com.ctrip.flight.xapi.common.SerializationUtil;
 import com.google.gson.Gson;
 import entity.Person;
 import reflect.PeopleMgr;
@@ -27,10 +26,6 @@ public class JsonTest {
 
         personMap.put("test", people);
         personMap.put("test2", people);
-
-        String xapiResult = SerializationUtil.toJson(personMap);
-        System.out.println(xapiResult);
-
 
         PeopleMgr peopleMgr = new PeopleMgr();
 

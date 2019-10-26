@@ -16,8 +16,9 @@ public class CollectMapTest {
         list.add(new Hosting(4, "aws.amazon.com", 200000));
         list.add(new Hosting(5, "mkyong.com", 1));
         list.add(new Hosting(6, "linode.com", 100000));
+        list = list.stream().sorted((v1,v2)-> v2.getId() - v1.getId()).collect(Collectors.toList());
         //example 1
-        Map result1 = list.stream()
+/*        Map result1 = list.stream()
                 .sorted(Comparator.comparingLong(Hosting::getWebsites).reversed())
                 .collect(
                         Collectors.toMap(
@@ -25,7 +26,7 @@ public class CollectMapTest {
                                 (oldValue, newValue) -> oldValue,       // if same key, take the old key
                                 LinkedHashMap::new                      // returns a LinkedHashMap, keep order
                         ));
-        System.out.println("Result 1 : " + result1);
+        System.out.println("Result 1 : " + result1);*/
     }
 
 }

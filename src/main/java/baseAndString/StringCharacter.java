@@ -5,6 +5,11 @@ package baseAndString;
  */
 public class StringCharacter {
     public static void main(String[] args) {
+
+
+        String t = "hello";
+        strTest(t);
+        System.out.print(t);
         String string = "h";
         char[] chars = string.toCharArray();
         System.out.println(chars.length);
@@ -24,7 +29,7 @@ public class StringCharacter {
     }
 
     private static void strTest(String str) {
-        str = "test";
+        str = str + "test";
         return;
     }
 }

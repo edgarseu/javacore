@@ -1,6 +1,5 @@
 package reflect;
 
-import com.ctrip.flight.xapi.common.SerializationUtil;
 import com.google.gson.Gson;
 import entity.Person;
 
